@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Script Test</title>
+</head>
+<body>
+    JS scripts as modules.
+    <script type = "module">
+        import {informalGreeting} from './greeting.js';
+        informalGreeting('Efe');
+    </script>
+    <script type="module">
+        import { informalGreeting, formalGreeting } from './greeting.js';
+        import greeting from './greeting.js';
+        formalGreeting('Efe');
+        greeting();
+    </script>
+</body>
+</html>
